@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Solution Starts here
 class Solution {
 public:
     void setZeroes(vector<vector<int>>& matrix) {
@@ -57,10 +56,3 @@ public:
         } 
     }
 };
-
-// Solution End here
-int main()
-{
-    std::cout << "Hello World!\n" ;
-    return 0; 
-}

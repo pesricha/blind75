@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Solution Starts here
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) 
@@ -88,10 +87,3 @@ public:
         return answer;
     }
 };
-
-// Solution End here
-int main()
-{
-    std::cout << "Hello World!\n" ;
-    return 0; 
-}
