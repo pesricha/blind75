@@ -1,4 +1,5 @@
 #include<iostream>
+#include<unordered_map>
 
 struct TreeNode
 {
@@ -14,6 +15,18 @@ struct TreeNode
 class Solution {
 public:
     TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
-        
+        int pval = p->val;
+        int qval = q->val;
+        TreeNode* ptr = root;  
+
+        while(true)
+        {
+            if (pval < ptr->val && qval < ptr->val) ptr = ptr->left;
+
+            else if (pval > ptr->val && qval > ptr->val) ptr = ptr->right;
+
+            else return ptr;
+        }
+
     }
 };
